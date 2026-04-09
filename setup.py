@@ -4,18 +4,18 @@ from Cython.Build import cythonize
 import os
 import shutil
 PACKAGE = "MyTools"
-class CustomBuildExt(build_ext):
-    def run(self):
-        # 先执行正常的编译
-        super().run()
-        # 编译完成后，删除源.py文件（保留__init__.py）
-        package_dir = PACKAGE
-        for root, _, files in os.walk(package_dir):
-            for file in files:
-                if file.endswith(".py") and file != "__init__.py":
-                    py_path = os.path.join(root, file)
-                    if os.path.exists(py_path):
-                        os.remove(py_path)
+# class CustomBuildExt(build_ext):
+#     def run(self):
+#         # 先执行正常的编译
+#         super().run()
+#         # 编译完成后，删除源.py文件（保留__init__.py）
+#         package_dir = PACKAGE
+#         for root, _, files in os.walk(package_dir):
+#             for file in files:
+#                 if file.endswith(".py") and file != "__init__.py":
+#                     py_path = os.path.join(root, file)
+#                     if os.path.exists(py_path):
+#                         os.remove(py_path)
 
 # 要编译的文件
 def get_py_files():

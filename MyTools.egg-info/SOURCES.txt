@@ -6,7 +6,6 @@ MyTools/FitTool.py
 MyTools/FormatTool.py
 MyTools/GeoTool.py
 MyTools/PaintTool.py
-MyTools/ToTool.py
 MyTools/__init__.py
 MyTools.egg-info/PKG-INFO
 MyTools.egg-info/SOURCES.txt
