@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "cython>=3.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MyTools"
+version = "1.0.0"
+authors = [
+  { name="AngryPsyduck", email="1440156598@qq.com" }
+]
+description = "Tools"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy==2.0.2","zernike","scikit-learn","scipy","tqdm","matplotlib","vtk","opencv-python","cython"
+]
